@@ -42,7 +42,21 @@
 
   <div class="container">
     <div class="image-container">
-      <img src="assets/us-national-parks-map-max.jpg" alt="a map of the united states and all of its national parks" class="is-max-widescreen">
+      <figure class="image is-max-widescreen">
+        <img src="assets/us-national-parks-map-max.jpg" alt="A map of the United States and all of its national parks">
+        <button class="button is-primary modal-button" data-target="parkModal">View Map Details</button>
+      </figure>
+    </div>
+  </div>
+
+  <div class="modal" id="parkModal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <p class="title">Map Details</p>
+        <p>This is a map of all the National parks in the United States! Feel free to reference it when searching for</p>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
     </div>
   </div>
 
