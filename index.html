@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parks and Respiration</title>
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <link rel="stylesheet" href="assets/css/style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks and Respiration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-  <header class="hero is-primary is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Parks and Respiration
-        </h1>
-        <h2 class="subtitle">
-          Ensuring your park-going experience is a breath of fresh air!
-        </h2>
-      </div>
-    </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-three-quarters-desktop is-full-mobile"> 
-          <div class="field has-addons">
-            <div class="control is-expanded">
-              <input class="input" id="searchBox" type="text" placeholder="Enter Location Here">
+    <header>
+        <section class="hero is-primary is-bold">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Parks and Respiration</h1>
+                    <h2 class="subtitle">Ensuring your park-going experience is a breath of fresh air!</h2>
+                </div>
             </div>
-            <div class="control">
-              <button class="button is-success is-outlined" id="searchButton">Search</button>
+        </section>
+    </header>
+
+    <main>
+        <section class="section search-form">
+            <div class="container">
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input class="input" id="searchBox" type="text" placeholder="Enter National Park Name">
+                    </div>
+                    <div class="control">
+                        <button class="button is-success is-outlined" id="searchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="image-container">
+              <figure class="image is-max-widescreen">
+                <img src="assets/us-national-parks-map-max.jpg" alt="A map of the United States and all of its national parks">
+                <button class="button is-primary modal-button" data-target="parkModal">View Map Details</button>
+              </figure>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+         
+          <div class="modal" id="parkModal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class="box">
+                <p class="title">Map Details</p>
+                <p>This is a map of all the National parks in the United States! Feel free to reference it when searching for</p>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+          </div>
+       
+    </main>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script2.js"></script>
 
-  <div class="container">
-    <div class="image-container">
-      <figure class="image is-max-widescreen">
-        <img src="assets/us-national-parks-map-max.jpg" alt="A map of the United States and all of its national parks">
-        <button class="button is-primary modal-button" data-target="parkModal">View Map Details</button>
-      </figure>
-    </div>
-  </div>
-
-  <div class="modal" id="parkModal">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-      <div class="box">
-        <p class="title">Map Details</p>
-        <p>This is a map of all the National parks in the United States! Feel free to reference it when searching for</p>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div>
-    </div>
-  </div>
-
-  <script src="/assets/js/script.js"></script>
-  <script src="/assets/js/script2.js"></script>
 </body>
 </html>

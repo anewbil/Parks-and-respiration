@@ -6,23 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
       'yellowstone': 'yell',
       'yosemite': 'yose',
       'grand canyon': 'grca',
-      'adams': 'adam'
+      'adams': 'adam' 
   };
   searchButton.addEventListener("click", function(event) {
       event.preventDefault();
       let parkName = searchInput.value.trim().toLowerCase();
       if (parkName && parkCodeMap[parkName]) {
+        
           localStorage.setItem('parkName', parkName);
           localStorage.setItem('parkCode', parkCodeMap[parkName]);
-         
+          // Redirect to the results page
           window.location.href = 'index2.html';
       } else {
           alert('Please enter a valid park name.');
       }
   });
 });
-
-
 document.addEventListener('DOMContentLoaded', function () {
     
     var modalButtons = document.querySelectorAll('.modal-button');
