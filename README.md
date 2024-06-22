@@ -21,7 +21,17 @@ Open index.html in a web browser: Simply double-click on index.html to open the 
 ##Usage
 Enter the name of the national park in the search box on the homepage.
 Click on the "Search" button to view detailed information, weather, and air quality data for the selected park.
+
 ##Screenshots
+Home page
+
+![Screenshot 2024-06-22 143942](https://github.com/anewbil/Parks-and-respiration/assets/166038771/0d14ec76-ab29-474e-87de-fa69ec0846f1)
+
+Home page modal
+![Screenshot 2024-06-22 144008](https://github.com/anewbil/Parks-and-respiration/assets/166038771/20522a5a-b6d1-449d-9c2a-563509cbb65d)
+
+Results page
+![Screenshot 2024-06-22 144039](https://github.com/anewbil/Parks-and-respiration/assets/166038771/c9453bae-0a33-446f-8018-3e68a663b4fc)
 
 
 License
