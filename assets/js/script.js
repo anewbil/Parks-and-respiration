@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
           localStorage.setItem('parkName', parkName);
           localStorage.setItem('parkCode', parkCodeMap[parkName]);
-          // Redirect to the results page
+         
           window.location.href = 'index2.html';
       } else {
           alert('Please enter a valid park name.');

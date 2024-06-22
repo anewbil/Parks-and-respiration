@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const apiKey = "99578f24910d157c10cde6c280b61a4f"; 
   const npsApiKey = "BwdZxBvggzA7pxuNEIGz1HxAEHkNB7ttYQhquqMO"
   const parkName = localStorage.getItem('parkName');
-  const parkCode = localStorage.getItem('parkcode')
+  const parkCode = localStorage.getItem('parkCode')
   const weatherInfo = document.querySelector("#weatherInfo");
   const airQualityInfo = document.querySelector("#airQualityInfo");
   const parkInfo = document.querySelector("#parkInfo");
-
+console.log(parkCode)
   if (parkCode) {
     fetchParkData(parkCode);
     searchCity(parkName);
