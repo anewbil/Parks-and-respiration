@@ -50,7 +50,7 @@ function searchCity(city) {
     })
     .catch(error => {
         console.error("Error fetching weather information:", error);
-        weatherInfo.innerHTML = `<p>Error fetching weather information. Please try again later.</p>`;
+        weatherInfo.innerHTML = `<p>Park is not in a city. Weather/Air quailty not available at this time.</p>`;
     });
 }
 
